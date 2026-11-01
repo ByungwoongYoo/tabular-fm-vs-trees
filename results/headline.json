@@ -1,0 +1,257 @@
+{
+ "concrete": [
+  {
+   "n_tree": 100,
+   "tree": "XGB-tuned",
+   "tree_score": 7.4278365223144815,
+   "fm": "Kumo",
+   "fm_rows": 100.0,
+   "ratio": 1.0,
+   "kind": "lower bound"
+  },
+  {
+   "n_tree": 250,
+   "tree": "XGB-tuned",
+   "tree_score": 5.590664617010043,
+   "fm": "Kumo",
+   "fm_rows": 154.99487521073084,
+   "ratio": 1.6129565552415865,
+   "kind": "interpolated"
+  },
+  {
+   "n_tree": 500,
+   "tree": "XGB-tuned",
+   "tree_score": 4.524874909985819,
+   "fm": "Kumo",
+   "fm_rows": 321.21268621551684,
+   "ratio": 1.5566010355659685,
+   "kind": "interpolated"
+  },
+  {
+   "n_tree": 730,
+   "tree": "XGB-tuned",
+   "tree_score": 4.099989608568453,
+   "fm": "Kumo",
+   "fm_rows": 449.35236973671704,
+   "ratio": 1.624560254189199,
+   "kind": "interpolated"
+  }
+ ],
+ "energy_heating": [
+  {
+   "n_tree": 100,
+   "tree": "XGB-tuned",
+   "tree_score": 0.8131264580446327,
+   "fm": "Kumo",
+   "fm_rows": 100.0,
+   "ratio": 1.0,
+   "kind": "lower bound"
+  },
+  {
+   "n_tree": 250,
+   "tree": "XGB-tuned",
+   "tree_score": 0.5185806835985279,
+   "fm": "Kumo",
+   "fm_rows": 183.713308796264,
+   "ratio": 1.360815945442729,
+   "kind": "interpolated"
+  },
+  {
+   "n_tree": 500,
+   "tree": "XGB-tuned",
+   "tree_score": 0.44420986157289544,
+   "fm": "Kumo",
+   "fm_rows": 357.5476620898229,
+   "ratio": 1.3984149611762537,
+   "kind": "interpolated"
+  }
+ ],
+ "steel_faults": [
+  {
+   "n_tree": 100,
+   "tree": "RF",
+   "tree_score": 0.8896392913873785,
+   "fm": "Kumo",
+   "fm_rows": 100.0,
+   "ratio": 1.0,
+   "kind": "lower bound"
+  },
+  {
+   "n_tree": 250,
+   "tree": "RF",
+   "tree_score": 0.9128432680750769,
+   "fm": "Kumo",
+   "fm_rows": 100.0,
+   "ratio": 2.5,
+   "kind": "lower bound"
+  },
+  {
+   "n_tree": 500,
+   "tree": "XGB-tuned",
+   "tree_score": 0.9401555227341621,
+   "fm": "Kumo",
+   "fm_rows": 199.1533923869734,
+   "ratio": 2.5106275821224973,
+   "kind": "interpolated"
+  },
+  {
+   "n_tree": 1000,
+   "tree": "HGB",
+   "tree_score": 0.9559153096871035,
+   "fm": "Kumo",
+   "fm_rows": 351.8770586324963,
+   "ratio": 2.841901668401774,
+   "kind": "interpolated"
+  },
+  {
+   "n_tree": 1500,
+   "tree": "HGB",
+   "tree_score": 0.965669676610867,
+   "fm": "Kumo",
+   "fm_rows": 529.2574329053787,
+   "ratio": 2.8341595351163864,
+   "kind": "interpolated"
+  }
+ ],
+ "wine_quality": [
+  {
+   "n_tree": 100,
+   "tree": "XGB-tuned",
+   "tree_score": 0.77434458040678,
+   "fm": "Kumo",
+   "fm_rows": 100.0,
+   "ratio": 1.0,
+   "kind": "lower bound"
+  },
+  {
+   "n_tree": 250,
+   "tree": "RF",
+   "tree_score": 0.7489663905420585,
+   "fm": "Kumo",
+   "fm_rows": 112.15826188365071,
+   "ratio": 2.2289931726950423,
+   "kind": "interpolated"
+  },
+  {
+   "n_tree": 500,
+   "tree": "XGB-tuned",
+   "tree_score": 0.7261807686959173,
+   "fm": "Kumo",
+   "fm_rows": 232.3690416499722,
+   "ratio": 2.1517496326088574,
+   "kind": "interpolated"
+  },
+  {
+   "n_tree": 1000,
+   "tree": "RF",
+   "tree_score": 0.6918317476476371,
+   "fm": "Kumo",
+   "fm_rows": 572.743012500614,
+   "ratio": 1.7459837626546828,
+   "kind": "interpolated"
+  },
+  {
+   "n_tree": 2000,
+   "tree": "RF",
+   "tree_score": 0.6598980547519363,
+   "fm": "Kumo",
+   "fm_rows": 957.9717834502289,
+   "ratio": 2.08774416381744,
+   "kind": "interpolated"
+  }
+ ],
+ "MagicTelescope": [
+  {
+   "n_tree": 100,
+   "tree": "RF",
+   "tree_score": 0.8371657839973813,
+   "fm": "FTFM-1",
+   "fm_rows": 100.0,
+   "ratio": 1.0,
+   "kind": "lower bound"
+  },
+  {
+   "n_tree": 250,
+   "tree": "RF",
+   "tree_score": 0.8902004711466517,
+   "fm": "FTFM-1",
+   "fm_rows": 124.89881596008968,
+   "ratio": 2.001620256191102,
+   "kind": "interpolated"
+  },
+  {
+   "n_tree": 500,
+   "tree": "RF",
+   "tree_score": 0.9015809132996632,
+   "fm": "FTFM-1",
+   "fm_rows": 156.71706064102298,
+   "ratio": 3.1904631056429964,
+   "kind": "interpolated"
+  },
+  {
+   "n_tree": 1000,
+   "tree": "RF",
+   "tree_score": 0.9189807507949869,
+   "fm": "FTFM-1",
+   "fm_rows": 221.71953404163315,
+   "ratio": 4.510202514732987,
+   "kind": "interpolated"
+  },
+  {
+   "n_tree": 2000,
+   "tree": "XGB-tuned",
+   "tree_score": 0.920469159184437,
+   "fm": "FTFM-1",
+   "fm_rows": 228.39890056137543,
+   "ratio": 8.756609576859848,
+   "kind": "interpolated"
+  }
+ ],
+ "superconduct": [
+  {
+   "n_tree": 100,
+   "tree": "HGB",
+   "tree_score": 19.616740798516805,
+   "fm": "Causilo",
+   "fm_rows": 100.0,
+   "ratio": 1.0,
+   "kind": "lower bound"
+  },
+  {
+   "n_tree": 250,
+   "tree": "HGB",
+   "tree_score": 17.491640803862193,
+   "fm": "Causilo",
+   "fm_rows": 137.59481925918055,
+   "ratio": 1.8169288738196412,
+   "kind": "interpolated"
+  },
+  {
+   "n_tree": 500,
+   "tree": "XGB-tuned",
+   "tree_score": 14.86698664602951,
+   "fm": "Causilo",
+   "fm_rows": 332.19696335770885,
+   "ratio": 1.5051311575705202,
+   "kind": "interpolated"
+  },
+  {
+   "n_tree": 1000,
+   "tree": "XGB-tuned",
+   "tree_score": 13.344698531455194,
+   "fm": "Causilo",
+   "fm_rows": 580.528982323193,
+   "ratio": 1.7225668837379053,
+   "kind": "interpolated"
+  },
+  {
+   "n_tree": 2000,
+   "tree": "XGB-tuned",
+   "tree_score": 12.16659721926631,
+   "fm": "Causilo",
+   "fm_rows": 1032.119809470432,
+   "ratio": 1.9377595330005102,
+   "kind": "interpolated"
+  }
+ ]
+}

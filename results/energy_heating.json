@@ -1,0 +1,466 @@
+{
+ "dataset": "energy_heating",
+ "csv": "data/energy_heating.csv",
+ "target": "heating_load",
+ "task": "reg",
+ "n_rows": 768,
+ "n_features": 8,
+ "classes": null,
+ "test_size": 256,
+ "sizes": [
+  100,
+  250,
+  500
+ ],
+ "repeats": 5,
+ "seed": 0,
+ "finished": "2026-11-01 22:26:44 KST",
+ "model_status": {
+  "RF": {
+   "status": "finished",
+   "returncode": 0,
+   "wall_s": 7.0,
+   "peak_rss_mb": 190,
+   "n_ok": 15,
+   "n_err": 0
+  },
+  "HGB": {
+   "status": "finished",
+   "returncode": 0,
+   "wall_s": 2.0,
+   "peak_rss_mb": 153,
+   "n_ok": 15,
+   "n_err": 0
+  },
+  "XGB-tuned": {
+   "status": "finished",
+   "returncode": 0,
+   "wall_s": 55.5,
+   "peak_rss_mb": 174,
+   "n_ok": 15,
+   "n_err": 0
+  },
+  "Causilo": {
+   "status": "finished",
+   "returncode": 0,
+   "wall_s": 18.2,
+   "peak_rss_mb": 627,
+   "n_ok": 15,
+   "n_err": 0
+  },
+  "LightPFN": {
+   "status": "skipped",
+   "reason": "classification-only model",
+   "n_ok": 0,
+   "n_err": 0
+  },
+  "FTFM-1": {
+   "status": "unavailable",
+   "returncode": 0,
+   "wall_s": 2.0,
+   "peak_rss_mb": 225,
+   "n_ok": 0,
+   "n_err": 1,
+   "first_error": "NotImplementedError: FTFMRegressor is not yet implemented: regression weights have not been released. Use FTFMClassifier."
+  },
+  "Kumo": {
+   "status": "finished",
+   "returncode": 0,
+   "wall_s": 77.8,
+   "peak_rss_mb": 2405,
+   "n_ok": 15,
+   "n_err": 0
+  },
+  "TabPFN": {
+   "status": "unavailable",
+   "returncode": 0,
+   "wall_s": 4.0,
+   "peak_rss_mb": 398,
+   "n_ok": 0,
+   "n_err": 1,
+   "first_error": "TabPFNLicenseError: TabPFN requires a one-time license acceptance to download\nmodel weights for local inference, but no interactive terminal\nis available.\n\nTo authenticate in a non-interactive environment:\n  1. Open https://ux.priorlabs.ai in a browser and log in (or register)\n  2. Accept the license on the Licenses tab\n  3. Copy your API Key from https://ux.priorlabs.ai/account\n  4. Set the environment variable: export TABPFN_TOKEN=\"<your-api-key>\"\n     or in Python (before calling .fit()): import os; os.environ[\"TABPFN_TOKEN\"] = \"<your-api-key>\""
+  }
+ },
+ "summary": [
+  {
+   "model": "Causilo",
+   "n": 100,
+   "RMSE_mean": 0.5916157187,
+   "MAE_mean": 0.4034266946,
+   "R2_mean": 0.9965400676,
+   "RMSE_std": 0.0629346544,
+   "MAE_std": 0.0342703255,
+   "R2_std": 0.0006868948,
+   "reps": 5,
+   "fit_s_mean": 0.284,
+   "predict_s_mean": 0.532
+  },
+  {
+   "model": "Causilo",
+   "n": 250,
+   "RMSE_mean": 0.5105819274,
+   "MAE_mean": 0.3468545015,
+   "R2_mean": 0.9974168616,
+   "RMSE_std": 0.0504096326,
+   "MAE_std": 0.0290365458,
+   "R2_std": 0.0005387656,
+   "reps": 5,
+   "fit_s_mean": 0.11,
+   "predict_s_mean": 0.798
+  },
+  {
+   "model": "Causilo",
+   "n": 500,
+   "RMSE_mean": 0.4272266299,
+   "MAE_mean": 0.2893465235,
+   "R2_mean": 0.9982055044,
+   "RMSE_std": 0.018077181,
+   "MAE_std": 0.0134346676,
+   "R2_std": 0.0001452522,
+   "reps": 5,
+   "fit_s_mean": 0.108,
+   "predict_s_mean": 1.412
+  },
+  {
+   "model": "HGB",
+   "n": 100,
+   "RMSE_mean": 2.5020615514,
+   "MAE_mean": 1.7953489267,
+   "R2_mean": 0.9380903539,
+   "RMSE_std": 0.1841281159,
+   "MAE_std": 0.0912821536,
+   "R2_std": 0.0098318959,
+   "reps": 5,
+   "fit_s_mean": 0.172,
+   "predict_s_mean": 0.0
+  },
+  {
+   "model": "HGB",
+   "n": 250,
+   "RMSE_mean": 1.3032387931,
+   "MAE_mean": 0.7723414297,
+   "R2_mean": 0.9821011799,
+   "RMSE_std": 0.3715039021,
+   "MAE_std": 0.1708999887,
+   "R2_std": 0.0081634106,
+   "reps": 5,
+   "fit_s_mean": 0.04,
+   "predict_s_mean": 0.0
+  },
+  {
+   "model": "HGB",
+   "n": 500,
+   "RMSE_mean": 0.5405999151,
+   "MAE_mean": 0.3859234309,
+   "R2_mean": 0.997121716,
+   "RMSE_std": 0.0318167009,
+   "MAE_std": 0.0190675468,
+   "R2_std": 0.0003432763,
+   "reps": 5,
+   "fit_s_mean": 0.064,
+   "predict_s_mean": 0.0
+  },
+  {
+   "model": "Kumo",
+   "n": 100,
+   "RMSE_mean": 0.5933926104,
+   "MAE_mean": 0.400017779,
+   "R2_mean": 0.996504009,
+   "RMSE_std": 0.0800167613,
+   "MAE_std": 0.0383201611,
+   "R2_std": 0.0008788203,
+   "reps": 5,
+   "fit_s_mean": 0.572,
+   "predict_s_mean": 3.222
+  },
+  {
+   "model": "Kumo",
+   "n": 250,
+   "RMSE_mean": 0.480684997,
+   "MAE_mean": 0.335436235,
+   "R2_mean": 0.9977278554,
+   "RMSE_std": 0.0225812248,
+   "MAE_std": 0.0153232626,
+   "R2_std": 0.0002064757,
+   "reps": 5,
+   "fit_s_mean": 0.414,
+   "predict_s_mean": 4.296
+  },
+  {
+   "model": "Kumo",
+   "n": 500,
+   "RMSE_mean": 0.4100251612,
+   "MAE_mean": 0.275179325,
+   "R2_mean": 0.9983468505,
+   "RMSE_std": 0.0205859581,
+   "MAE_std": 0.0125958861,
+   "R2_std": 0.0001530203,
+   "reps": 5,
+   "fit_s_mean": 0.346,
+   "predict_s_mean": 6.274
+  },
+  {
+   "model": "RF",
+   "n": 100,
+   "RMSE_mean": 1.5933972156,
+   "MAE_mean": 0.9954388125,
+   "R2_mean": 0.9747338642,
+   "RMSE_std": 0.1744095796,
+   "MAE_std": 0.0716634722,
+   "R2_std": 0.0060588362,
+   "reps": 5,
+   "fit_s_mean": 0.43,
+   "predict_s_mean": 0.046
+  },
+  {
+   "model": "RF",
+   "n": 250,
+   "RMSE_mean": 0.7013819956,
+   "MAE_mean": 0.4439015453,
+   "R2_mean": 0.9950446857,
+   "RMSE_std": 0.120353284,
+   "MAE_std": 0.0417034566,
+   "R2_std": 0.0016493869,
+   "reps": 5,
+   "fit_s_mean": 0.298,
+   "predict_s_mean": 0.05
+  },
+  {
+   "model": "RF",
+   "n": 500,
+   "RMSE_mean": 0.5126105808,
+   "MAE_mean": 0.3510168531,
+   "R2_mean": 0.997412193,
+   "RMSE_std": 0.0291307922,
+   "MAE_std": 0.0181993141,
+   "R2_std": 0.0003022502,
+   "reps": 5,
+   "fit_s_mean": 0.32,
+   "predict_s_mean": 0.05
+  },
+  {
+   "model": "XGB-tuned",
+   "n": 100,
+   "RMSE_mean": 0.813126458,
+   "MAE_mean": 0.5593591501,
+   "R2_mean": 0.9933797869,
+   "RMSE_std": 0.1300851258,
+   "MAE_std": 0.0775811256,
+   "R2_std": 0.0019977021,
+   "reps": 5,
+   "fit_s_mean": 3.208,
+   "predict_s_mean": 0.0
+  },
+  {
+   "model": "XGB-tuned",
+   "n": 250,
+   "RMSE_mean": 0.5185806836,
+   "MAE_mean": 0.3729810661,
+   "R2_mean": 0.9973545133,
+   "RMSE_std": 0.0334199258,
+   "MAE_std": 0.0183273584,
+   "R2_std": 0.0002916578,
+   "reps": 5,
+   "fit_s_mean": 3.722,
+   "predict_s_mean": 0.0
+  },
+  {
+   "model": "XGB-tuned",
+   "n": 500,
+   "RMSE_mean": 0.4442098616,
+   "MAE_mean": 0.3219473877,
+   "R2_mean": 0.9980609246,
+   "RMSE_std": 0.0242110435,
+   "MAE_std": 0.0221397075,
+   "R2_std": 0.0001695705,
+   "reps": 5,
+   "fit_s_mean": 4.086,
+   "predict_s_mean": 0.0
+  }
+ ],
+ "data_efficiency": {
+  "Causilo": {
+   "tree_reference": "XGB-tuned",
+   "tree_n": 500,
+   "tree_score": 0.44420986157289544,
+   "metric": "RMSE",
+   "fm_n_to_match": 434.1,
+   "data_ratio": 1.15
+  },
+  "Kumo": {
+   "tree_reference": "XGB-tuned",
+   "tree_n": 500,
+   "tree_score": 0.44420986157289544,
+   "metric": "RMSE",
+   "fm_n_to_match": 357.5,
+   "data_ratio": 1.4
+  }
+ },
+ "xgb_best_params": [
+  {
+   "n": 100,
+   "rep": 0,
+   "colsample_bytree": 0.7188,
+   "learning_rate": 0.2076,
+   "max_depth": 2,
+   "min_child_weight": 1.8735,
+   "n_estimators": 805,
+   "reg_lambda": 3.8322,
+   "subsample": 0.8116
+  },
+  {
+   "n": 250,
+   "rep": 0,
+   "colsample_bytree": 0.7188,
+   "learning_rate": 0.2076,
+   "max_depth": 2,
+   "min_child_weight": 1.8735,
+   "n_estimators": 805,
+   "reg_lambda": 3.8322,
+   "subsample": 0.8116
+  },
+  {
+   "n": 500,
+   "rep": 0,
+   "colsample_bytree": 0.8603,
+   "learning_rate": 0.0724,
+   "max_depth": 3,
+   "min_child_weight": 8.8038,
+   "n_estimators": 643,
+   "reg_lambda": 0.1629,
+   "subsample": 0.7894
+  },
+  {
+   "n": 100,
+   "rep": 1,
+   "colsample_bytree": 0.9543,
+   "learning_rate": 0.0833,
+   "max_depth": 2,
+   "min_child_weight": 1.8578,
+   "n_estimators": 668,
+   "reg_lambda": 2.4088,
+   "subsample": 0.9989
+  },
+  {
+   "n": 250,
+   "rep": 1,
+   "colsample_bytree": 0.9325,
+   "learning_rate": 0.1678,
+   "max_depth": 2,
+   "min_child_weight": 1.0941,
+   "n_estimators": 531,
+   "reg_lambda": 0.1314,
+   "subsample": 0.8682
+  },
+  {
+   "n": 500,
+   "rep": 1,
+   "colsample_bytree": 0.9543,
+   "learning_rate": 0.0833,
+   "max_depth": 2,
+   "min_child_weight": 1.8578,
+   "n_estimators": 668,
+   "reg_lambda": 2.4088,
+   "subsample": 0.9989
+  },
+  {
+   "n": 100,
+   "rep": 2,
+   "colsample_bytree": 0.7138,
+   "learning_rate": 0.0442,
+   "max_depth": 6,
+   "min_child_weight": 2.9366,
+   "n_estimators": 938,
+   "reg_lambda": 3.9482,
+   "subsample": 0.9257
+  },
+  {
+   "n": 250,
+   "rep": 2,
+   "colsample_bytree": 0.6023,
+   "learning_rate": 0.0822,
+   "max_depth": 4,
+   "min_child_weight": 4.2928,
+   "n_estimators": 728,
+   "reg_lambda": 1.1436,
+   "subsample": 0.6538
+  },
+  {
+   "n": 500,
+   "rep": 2,
+   "colsample_bytree": 0.6023,
+   "learning_rate": 0.0822,
+   "max_depth": 4,
+   "min_child_weight": 4.2928,
+   "n_estimators": 728,
+   "reg_lambda": 1.1436,
+   "subsample": 0.6538
+  },
+  {
+   "n": 100,
+   "rep": 3,
+   "colsample_bytree": 0.7754,
+   "learning_rate": 0.1112,
+   "max_depth": 2,
+   "min_child_weight": 1.3223,
+   "n_estimators": 889,
+   "reg_lambda": 6.1079,
+   "subsample": 0.9585
+  },
+  {
+   "n": 250,
+   "rep": 3,
+   "colsample_bytree": 0.7754,
+   "learning_rate": 0.1112,
+   "max_depth": 2,
+   "min_child_weight": 1.3223,
+   "n_estimators": 889,
+   "reg_lambda": 6.1079,
+   "subsample": 0.9585
+  },
+  {
+   "n": 500,
+   "rep": 3,
+   "colsample_bytree": 0.7754,
+   "learning_rate": 0.1112,
+   "max_depth": 2,
+   "min_child_weight": 1.3223,
+   "n_estimators": 889,
+   "reg_lambda": 6.1079,
+   "subsample": 0.9585
+  },
+  {
+   "n": 100,
+   "rep": 4,
+   "colsample_bytree": 0.7727,
+   "learning_rate": 0.0353,
+   "max_depth": 3,
+   "min_child_weight": 1.2957,
+   "n_estimators": 727,
+   "reg_lambda": 0.2435,
+   "subsample": 0.6012
+  },
+  {
+   "n": 250,
+   "rep": 4,
+   "colsample_bytree": 0.7439,
+   "learning_rate": 0.1573,
+   "max_depth": 6,
+   "min_child_weight": 8.4474,
+   "n_estimators": 933,
+   "reg_lambda": 0.2967,
+   "subsample": 0.7926
+  },
+  {
+   "n": 500,
+   "rep": 4,
+   "colsample_bytree": 0.9523,
+   "learning_rate": 0.036,
+   "max_depth": 4,
+   "min_child_weight": 7.0056,
+   "n_estimators": 872,
+   "reg_lambda": 2.5001,
+   "subsample": 0.8678
+  }
+ ]
+}
