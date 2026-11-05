@@ -1,0 +1,9 @@
+{
+  "title": "Tabular foundation models vs tuned trees on small data (CPU, 100 to 2,000 rows)",
+  "upload_type": "software",
+  "creators": [{"name": "Yoo, Byungwoong", "affiliation": "BigWonder"}],
+  "description": "Learning-curve benchmark of four tabular foundation models (Kumo-Tabular, Causilo, FTFM-1, LightPFN) against random forest, HistGradientBoosting and a 20-config tuned XGBoost on six UCI datasets (CC BY 4.0), 2-core CPU, 3 GB memory cap. Code, results and charts. Model weights are not included and keep their own licences.",
+  "license": "MIT",
+  "keywords": ["tabular foundation models", "XGBoost", "benchmark", "learning curves", "CPU"],
+  "related_identifiers": [{"identifier": "https://github.com/ByungwoongYoo/tabular-fm-vs-trees", "relation": "isSupplementTo", "scheme": "url"}]
+}

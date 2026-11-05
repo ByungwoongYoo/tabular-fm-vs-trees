@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this benchmark, please cite it as below."
+title: "Tabular foundation models vs tuned trees on small data (CPU, 100 to 2,000 rows)"
+authors:
+  - family-names: Yoo
+    given-names: Byungwoong
+type: software
+license: MIT
+repository-code: "https://github.com/ByungwoongYoo/tabular-fm-vs-trees"
+date-released: 2026-11-05
+keywords: [tabular foundation models, XGBoost, learning curves, benchmark, CPU]
+# doi: 10.5281/zenodo.XXXXXXX  (fill after Zenodo release)
