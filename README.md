@@ -1,5 +1,7 @@
 # Tabular foundation models vs tuned trees on small data (CPU, 100 to 2,000 rows)
 
+Updates: [@woongworks on X](https://x.com/woongworks)
+
 A learning-curve benchmark of four tabular foundation models (Kumo-Tabular, Causilo, FTFM-1, LightPFN)
 against random forest, HistGradientBoosting and a tuned XGBoost, on six public UCI datasets,
 on a 2-core CPU with a 3 GB memory cap.
